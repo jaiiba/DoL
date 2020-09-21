@@ -1,4 +1,4 @@
-console.log('awoo >.<"');
+console.log('awoo >.<');
 
 // if ('serviceWorker' in navigator) {
 //   navigator.serviceWorker.register('/DoL/service-worker.js')
