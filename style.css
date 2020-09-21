@@ -1,0 +1,23 @@
+/*CSS override*/
+/*Remove comments to apply*/
+body {
+    background-color: #222;
+}
+
+#story {
+    font: 18px/1 Georgia,Helmet,Freesans,sans-serif;
+}
+
+/*
+#ui-bar-body {
+    font: 16px/1 Helmet,Freesans,sans-serif;
+}
+
+#stats {
+	top: 256px;
+}
+
+body.has-images #story-caption {
+	margin-top: calc(278px - 2.5em);
+}
+*/
