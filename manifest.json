@@ -4,7 +4,7 @@
   "short_name": "DoL",
   "name": "Degrees of Lewdity",
   "description": "Degrees of Lewdity",
-  "start_url": "./DoL/",
+  "start_url": "./",
   "scope": ".",
   "display": "standalone",
   "background_color": "#222222",
