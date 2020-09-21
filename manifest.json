@@ -6,7 +6,7 @@
   "description": "Degrees of Lewdity",
   "start_url": "./",
   "scope": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#222222",
   "theme_color": "#222222",
   "prefer_related_applications": false,
