@@ -4,11 +4,11 @@
   "description": "Degrees of Lewdity",
   "start_url": "./",
   "scope": ".",
-  "display": "minimal-ui",
+  "display": "standalone",
   "background_color": "#222222",
   "theme_color": "#222222",
   "prefer_related_applications": false,
-  "orientation": "any",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon-192.png",
