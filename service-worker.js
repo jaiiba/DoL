@@ -12,7 +12,7 @@ self.addEventListener('install', function(event) {
           '/DoL/icon-512.png',
           '/DoL/favicon.ico',
           '/DoL/DolSettingsExport.json',
-          '/DoL/style.css',
+          '/DoL/style.css'
         ]
       );
     })
