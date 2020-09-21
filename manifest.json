@@ -1,22 +1,25 @@
 {
-  "short_name": "DoL",
-  "name": "Degrees of Lewdity",
+	"short_name": "DoL",
+	"name": "Degrees of Lewdity",
   "description": "Lewwwwwds!",
-  "icons": [
-    {
-      "src": "/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "/?source=pwa",
-  "background_color": "#222222",
-  "display": "standalone",
-  "scope": "/",
-  "theme_color": "#222222"
+	"icons": [
+		{
+			"src": "/icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	],
+	"start_url": "https://jaibamon.github.io/DoL/",
+  "android_package_name": "com.dolweb.android",
+	"background_color": "#222222",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#222222"
 }
