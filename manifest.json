@@ -2,21 +2,31 @@
   "short_name": "DoL",
   "name": "Degrees of Lewdity",
   "description": "Degrees of Lewdity",
-  "start_url": "./",
-  "scope": ".",
+  "start_url": "./DoL/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#222222",
   "theme_color": "#222222",
   "prefer_related_applications": false,
-  "orientation": "portrait",
+  "orientation": "any",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icon-512.png",
+      "src": "/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
