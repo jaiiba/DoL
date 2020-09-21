@@ -19,7 +19,7 @@
 	"start_url": "https://jaibamon.github.io/DoL/",
   "android_package_name": "com.dolweb.android",
 	"background_color": "#222222",
-	"display": "standalone",
+	"display": "minimal-ui",
 	"scope": "/",
 	"theme_color": "#222222"
 }
