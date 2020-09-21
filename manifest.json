@@ -3,7 +3,7 @@
   "name": "Degrees of Lewdity",
   "description": "Degrees of Lewdity",
   "start_url": "./DoL/",
-  "scope": "/",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#222222",
   "theme_color": "#222222",
