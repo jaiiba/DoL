@@ -7,8 +7,8 @@
   "start_url": "/DoL/",
   "scope": "/DoL/",
   "display": "standalone",
-  "background_color": "#1b1c27",
-  "theme_color": "#1b1c27",
+  "background_color": "#3d4352",
+  "theme_color": "#3d4352",
   "prefer_related_applications": false,
   "orientation": "any",
   "icons": [
