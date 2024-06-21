@@ -189,6 +189,17 @@ sugarcube-2:
         ![furnitureicon](./furniture/table.png)
         ![chair](./furniture/basicChair.png)
       tags: ["img"]
+    birdicon:
+      description: |-
+        Prints an icon relative to birdTower directory
+
+        ![birdicon](./birdTower/nest.png)
+
+        `<<birdIcon iconFileName>>`
+        - **iconFileName**: `string` - filename relative to birdTower directory (including extension)
+      parameters:
+        - text
+      tags: ["img"]
     brothelicon:
       description: |-
         Prints a brothel icon
@@ -814,21 +825,14 @@ sugarcube-2:
       description: |-
         Prints a moor icon
 
-        ![nest](./nest.png)
-        ![perch night](./perch_night.png)
-        ![perch day](./perch.png)
-        ![sing](./sing.png)
-        ![rainwater](./rain_pool.gif)
         ![remy](./estate.png)
         ![remy cottage](./remy_cottage.png)
-        ![tower](./tower.png)
         ![default](./moor.png)
 
-        `<<mooricon iconName?>>`
-        - **iconName** _optional_: `string` - interest point
-          - `"nest"` | `"perch"` | `"sing"` | `"rainwater"` | `"remy"` | `"remy cottage"` | `"tower"` | `default`
+        `<<mooricon iconName>>`
+        - **iconName**: `"remy"` | `"remy cottage"` |`default`
       parameters:
-        - '|+ "nest"|"perch"|"sing"|"rainwater"|"remy"|"remy cottage"|"tower"'
+        - '|+ "nest"|"perch"|"sing"|"rainwater"|"remy"|"remy cottage"|"tower"|"firepit"'
       tags: ["img"]
     museumicon:
       description: "![museumicon](./museum.png)"
@@ -933,6 +937,16 @@ sugarcube-2:
         ![clear](./pound.png)
         ![rain](./pound_rust.png)
       tags: ["img"]
+    pregnancyicon:
+      description: |-
+        Prints composite icon of specified type of pregnancy
+        
+        `<<pregnancyicon iconType?>>`
+        - **iconType** _optional_: `string` - type of pregnancy to generate icon for
+          - `"player"` | `"Great Hawk"` | `"npc"`
+          - Defaults to `"npc"`
+      parameters:
+        - '|+ "player"|"Great Hawk"|"npc"'
     pregnancytesticon:
       description: "![pregnancytesticon](./pregnancy_test.gif)"
       tags: ["img"]
@@ -1166,29 +1180,12 @@ sugarcube-2:
         Prints a composite icon modified by pc's skin colour
 
         ![waiter_skin](./waiter_arm.png)
-        ![waiter_front](./waiter_platter.png) /
-        ![chef_skin](./chef_hands.png)
-        ![chef_front](./chef_bowl.png) /
-        ![hitchhike_skin](./hitchhike_thumb.png)
-        ![hitchhike_front](./hitchhike_car.png) /
-        ![strip_skin](./strip_skin.png)
-        ![strip_front](./strip_undies.png) /
-        ![pray_skin](./pray_hands.png)
-        ![pray_front](./pray.png) /
-        ![breastEnlarge_skin](./breast_enlarge_skin.png)
-        ![breastEnlarge_front](./breast_enlarge_arrows.png) /
-        ![breastReduce_skin](./breast_reduce_skin.png)
-        ![breastReduce_front](./breast_reduce_arrows.png) /
-        ![penisEnlarge_skin](./penis_enlarge_skin.png)
-        ![penisEnlarge_front](./penis_enlarge_arrows.png) /
-        ![penisReduce_skin](./penis_reduce_skin.png)
-        ![penisReduce_front](./penis_reduce_arrows.png) /
+        ![waiter_front](./waiter_platter.png)
 
         `<<skinicon type>>`
         - **type**: `string` - type of icon to compose
-          - `"waiter"` | `"chef"` | `"hitchhike"` | `"strip"` | `"pray"` | `"breastEnlarge"` | `"breastReduce"` | `"penisEnlarge"` | `"penisReduce"`
       parameters:
-        - '"waiter"|"chef"|"hitchhike"|"strip"|"pray"|"breastEnlarge"|"breastReduce"|"penisEnlarge"|"penisReduce"'
+        - text
     smokeicon:
       description: "![cig](./cig.png)"
       tags: ["img"]
@@ -1224,12 +1221,17 @@ sugarcube-2:
         ![up](./stairsup.png)
         ![down](./stairsdown.png)
         ![default](./stairsdownup.png)
+        ![up prison](./stairsupprison.png)
+        ![down prison](./stairsdownprison.png)
+        ![downup prison](./stairsdownupprison.png)
 
-        `<<stairsicon iconName?>>`
+        `<<stairsicon iconName? location?>>`
         - **iconName** _optional_: `string` - direction
           - `"up"` | `"down"` | `default`
+        - **location** _optional_: `string` - location
+          - `"prison"` | `default`
       parameters:
-        - '|+ "up"|"down"|"downup"|"updown"'
+        - '|+ "up"|"down"|"downup" |+ "prison"'
       tags: ["img"]
     stallicon:
       description: |-
@@ -1339,6 +1341,24 @@ sugarcube-2:
       parameters:
         - '|+ "north"|"south"|"west"|"east"'
       tags: ["img"]
+    tficon:
+      description: |-
+        Prints a composite transformation icon
+
+        ![angel](./tf_angel.png)
+        ![fallen](./tf_fallen.png)
+        ![demon](./tf_demon.png)
+        ![wolf](./tf_wolf.png)
+        ![cat](./tf_cat.png)
+        ![cow](./tf_cow.png)
+        ![fox](./tf_fox.png)
+        ![harpy](./tf_harpy.png)
+        
+        `<<tficon tfType>>`
+        - **tfType**: `string` - Type of tf to print
+          - `"angel"` | `"fallen"` | `"demon"` | `"wolf"` | `"cat"` | `"cow"` | `"fox"` | `"harpy"`
+      parameters:
+        - '"angel"|"fallen"|"demon"|"wolf"|"cat"|"cow"|"fox"|"harpy"'
     towelicon:
       description: "![towelicon](./clothes/towel.png)"
       tags: ["img"]
@@ -1382,6 +1402,14 @@ sugarcube-2:
       tags: ["img"]
     wardrobeicon:
       description: "![wardrobeicon](./wardrobe.png)"
+      tags: ["img"]
+    weatherIcon:
+      description: |-
+        Prints an icon based on the weather and time of day
+
+        ![blood_clouds](./weather/blood_clouds.png)
+        ![day_clear](./weather/day_clear.png)
+        ![night_snow](./weather/night_snow.png)
       tags: ["img"]
     wolfcaveicon:
       description: |-
